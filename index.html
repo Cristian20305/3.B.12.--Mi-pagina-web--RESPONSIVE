@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina web</title>
+    <script src="https://kit.fontawesome.com/fe060c3d5b.js" crossorigin="anonymous"></script>
+
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        
+        }
+
+    nav {
+        background-color: rgb(159, 205, 231);
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Anton', sans-serif;        
+        }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        }
+    
+    nav a:hover {
+        color: red; 
+        font-weight: bold;
+    }
+
+    header {
+        background-image: url(img/Banner.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #caja-titulos {
+        text-align: center;
+        color: yellow;
+        text-shadow: 3px 3px 3px black;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #contenedor-obras{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+        border: 2px solid orange;
+        padding: 10px;
+
+    }
+    .titulo{
+        font-family: 'Anton', sans-serif;        
+
+    }
+
+    #obras{
+        background-color: navajowhite;
+    }
+
+    #contenedor-obras img {
+        width: 80%;
+    }
+
+    #contenedor-obras article {
+        width: 30%;
+        box-shadow: 3px 3px 3px black;
+        text-align: center;
+        background-color: white;
+        margin-top: 10px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    footer{
+        background-color: grey;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #contacte{
+        width: 100%;
+        border-bottom: 2px solid white;
+    }
+
+    #enlaces{
+        width: 33%;
+    }
+
+    #mail{
+        width: 33%;
+    }
+
+    #estamos-en{
+        width: 33%;
+    }
+
+    footer h2{
+        font-size: .9em;
+    }
+
+    footer div {
+        padding: 10px;
+    }
+    .mapa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .text-box {
+    width: 500px; 
+    }
+    section, h1{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #servicios{
+        background-color: rgb(159, 205, 231);
+    }
+    #opiniones-contenedor{
+        display: flex;
+        justify-content:space-around;
+        padding: 10px;
+        margin: 20px 0; 
+        border: 2px solid #0e7ff9; 
+    }
+    #opiniones-contenedor, img{
+        border-radius: 30px;
+    }       
+    #opiniones{
+        background-color: rgb(159, 205, 231);
+
+    }    
+    #somos{
+        font-family: 'Anton', sans-serif;        
+
+    }
+    @media (max-width:600px){   /*MOVILES */
+
+        /*
+        nav { display: block; } Para que se quede en un bloque 
+
+        nav a{ display: block; text-align: center;}
+        */
+        nav {flex-wrap: wrap; position: static;}
+
+        nav a{ width: 100%; text-align: center;}
+
+        #contenedor-obras{flex-wrap: wrap;}
+
+        #contenedor-obras article {width: 100%;}
+
+        #opiniones-contenedor{flex-wrap: wrap;}
+
+        #servicios .mapa {
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+        align-items: center;    /* Centrar los elementos en el eje transversal */
+    }
+
+
+        }
+
+    @media (min-width:601px) and (max-width: 800px){   /*TABLES */
+    
+        nav {flex-wrap: wrap; position: static;}
+
+        nav a{ width: 100%; text-align: center;}
+
+        #contenedor-obras{flex-wrap: wrap;}
+
+        #contenedor-obras article {width: 50%;}
+
+        #opiniones-contenedor{flex-wrap: wrap;}
+
+        .text-box {width: 100%;}
+
+        #servicios .mapa {
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+        align-items: center;    /* Centrar los elementos en el eje transversal */
+    }
+
+
+    }
+    
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <a href="#">Navipacks</a>
+        <a href="#">Cachimbas</a>
+        <a href="#">Cazoletas</a>
+        <a href="#">Mangueras</a>
+        <a href="#">Accesorios</a>
+    </nav>
+
+    <header>
+        <div id="caja-titulos">
+            <h1>Hispacachimba</h1>
+        </div>  
+    </header>
+
+    <section id="servicios">
+        <h1 id="somos">Quines somos</h1>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12355.694786205464!2d-2.617321749331337!3d39.26729784635445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68879675896bdf%3A0x7d93a39f29172d9d!2sVILLAMATICA!5e0!3m2!1ses!2ses!4v1702897953112!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="text-box">
+                <h2>Información adicional</h2>
+                <p>Este es un cuadro de texto adicional que puedes personalizar según tus necesidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="obras">
+        <h1 class="titulo">Nuestras ofertas</h1>
+        <div id="contenedor-obras">
+        <article>
+            <h1>Pack Bastón De Caramelo</h1>
+            <img src="img/imagen1.jpg" alt="ofertas">
+        </article>
+
+        <article>
+            <h1>Pack Estrella</h1>
+            <img src="img/imagen2.jpg" alt="ofertas">
+        </article>
+
+        <article>
+            <h1>Pack Turrón</h1>
+            <img src="img/imagen3.jpg" alt="ofertas">
+        </article>
+
+        <article>
+            <h1>Pack Chimenea</h1>
+            <img src="img/imagen4.jpg" alt="ofertas">
+        </article>
+
+        <article>
+            <h1>Pack Adviento</h1>
+            <img src="img/imagen5.jpg" alt="ofertas">
+        </article>
+
+        <article>
+            <h1>Pack Burrito Cachimbero</h1>
+            <img src="img/imagen6.jpg" alt="ofertas">
+        </article>
+    </div>
+    </section>
+    <section id="opiniones">
+        <h1>Nuestros Clientes</h1>
+        <div id="opiniones-contenedor">
+
+            <div id="opinion1">
+                <img src="img/foto1.jpg" alt="">
+                <h2>Juana Garcia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, possimus veritatis itaque ipsum fuga unde alias corporis culpa, iusto inventore laborum natus quo aut consectetur mollitia! Saepe numquam doloribus facilis.</p>
+            </div>
+            <div id="opinion2">
+                <img src="img/foto2.jpg" alt="">
+                <h2>Jose Maria</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, possimus veritatis itaque ipsum fuga unde alias corporis culpa, iusto inventore laborum natus quo aut consectetur mollitia! Saepe numquam doloribus facilis.</p>
+
+            </div>
+            <div id="opinion3">
+                <img src="img/foto3.jpg" alt="">
+                <h2>Carla Carrizo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, possimus veritatis itaque ipsum fuga unde alias corporis culpa, iusto inventore laborum natus quo aut consectetur mollitia! Saepe numquam doloribus facilis.</p>
+
+            </div>            
+
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="contacte">
+            <h1>Nuestras Redes Sociales</h1>
+        </div>
+
+        <div id="enlaces">
+            <h2>Redes</h2>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+        <div id="estamos-en">
+            <h2>Contacto de soporte </h2>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+        <div id="email">
+            <h2>Pagos que aceptamos</h2>
+            <a href="#"><i class="fa-brands fa-paypal"></i></a>
+        </div>
+
+    </footer>
+
+</body>
+</html>
